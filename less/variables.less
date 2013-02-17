@@ -25,7 +25,7 @@
 @green:                 #85C446;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
-@orange:                #CB521E;
+@orange:                #f89406;
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
@@ -38,6 +38,7 @@
 @brown: #562700;
 @brownLight: fade(@brown, 65%);
 @berryRed: #9F3515;
+@berryOrange: #CB521E;
 
 
 // Scaffolding
@@ -64,7 +65,7 @@
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    @serifFontFamily; 
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    500;
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -182,7 +183,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  @blueLighter; //#f5f5f5;
+@wellBackground:                  @grayLighter; //#f5f5f5;
 
 
 // Navbar
@@ -190,7 +191,7 @@
 @navbarCollapseWidth:             979px;
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
-@navbarHeight:                    40px;
+@navbarHeight:                    30px;
 @navbarBackgroundHighlight:       @greenLight; //#ffffff;
 @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
@@ -240,15 +241,15 @@
 
 // Form states and alerts
 // -------------------------
-@warningText:             @berryRed; // #c09853;
+@warningText:             @berryOrange; // #c09853;
 @warningBackground:       #fcf8e3;
-@warningBorder:           fade(@brownLight,50%); // darken(spin(@warningBackground, -10), 3%);
+@warningBorder:           fade(@berryOrange,30%); // darken(spin(@warningBackground, -10), 3%);
 
 @errorText:               #b94a48;
 @errorBackground:         #f2dede;
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
-@successText:             #468847;
+@successText:             darken(@green, 30%); //#468847;
 @successBackground:       @greenLight; //#dff0d8;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
