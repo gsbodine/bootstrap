@@ -6,6 +6,10 @@
         Theme-specific definitions and overrides
 */
 
+.padded {
+    padding: 1em;
+}
+
 .admin-bar {
     padding-top: 30px;
 }
@@ -181,7 +185,6 @@ legend {
 }
 
 .triBox {
-    background-color: @blueLighter;
     padding: 0.25em;
     border-radius: 5px;
     color: #333;
@@ -214,4 +217,13 @@ i.silver {
 
 i.bronze {
     color: #c90;
+}
+
+.map-view-item {
+    padding: .5em 1em 0 0;
+}
+
+
+img[src*="gstatic.com/"], img[src*="googleapis.com/"]  {
+    max-width: 99999px;
 }
